@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEMA SHAYESH | تجربة سينمائية حصريه</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header id="navbar">
+        <a href="#" class="logo">CINEMA SHAYESH</a>
+        <nav>
+            <div class="nav-item active" onclick="changeType('movie', this)">الأفلام</div>
+            <div class="nav-item" onclick="changeType('tv', this)">المسلسلات</div>
+            <div class="nav-item" onclick="loadRegion('KR', this)">كوري</div>
+            <div class="nav-item" onclick="loadRegion('TR', this)">تركي</div>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section class="hero" id="heroSection">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <span class="trending-badge">الأكثر طلباً اليوم</span>
+                    <h1 id="heroTitle">...</h1>
+                    <p id="heroDesc">...</p>
+                    <button class="play-btn" id="heroPlayBtn"><span>▶</span> شاهد الآن</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="content-wrapper">
+            <div class="grid-header">
+                <h2 id="listTitle">اكتشف المحتوى</h2>
+            </div>
+            <div class="movie-grid" id="mainGrid"></div>
+            <div id="scrollLoader" class="scroll-loader">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </main>
+
+    <div id="playerModal" class="modal">
+        <div class="modal-backdrop" onclick="closePlayer()"></div>
+        <div class="modal-window">
+            <div class="close-circle" onclick="closePlayer()">&times;</div>
+            <div id="videoContainer" class="video-container large-player"></div> 
+            <div class="modal-body">
+    <div class="meta-header">
+        <h2 id="mTitle"></h2>
+        <div class="stats-bar">
+            <span id="mRating" class="stat-item gold"><i class="fas fa-star"></i> --</span>
+            <span id="mDate" class="stat-item"><i class="fas fa-calendar-alt"></i> --</span>
+        </div>
+    </div>
+    
+    <div id="mGenres" class="genres-row"></div>
+    
+    <div class="desc-section">
+        <h3><i class="fas fa-info-circle"></i> قصة العمل</h3>
+        <p id="mDesc" class="movie-desc"></p>
+    </div>
+
+    <div id="srvBar" class="server-tabs"></div>
+</div>
+        </div>
+    </div>
+
+   
+    <script src="script.js"></script>
+
+    <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M55C4R490Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-M55C4R490Z');
+    </script>
+    <meta charset="UTF-8">
+    <title>سينما شايش</title>
+    </head>
+<body>
+    ...
+</body>
+</html>
+</body>
+</html>
+
